@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open weather</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>Location</legend>
+        <div class="form-control">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+        </div>
+        <button type="submit">Go</button>
+      </fieldset>
+
+      <h3>Forcast for upcoming 5 days</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Temp (min/max)</th>
+            <th>Icon</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="cards">
+        <div class="card">
+          <p id="time"></p>
+          <img src="" alt="" />
+          <p id="temp"></p>
+          <p id="description"></p>
+        </div>
+        <div class="card">
+          <p id="time"></p>
+          <img src="" alt="" />
+          <p id="temp"></p>
+          <p id="description"></p>
+        </div>
+        <div class="card">
+          <p id="time"></p>
+          <img src="" alt="" />
+          <p id="temp"></p>
+          <p id="description"></p>
+        </div>
+        <div class="card">
+          <p id="time"></p>
+          <img src="" alt="" />
+          <p id="temp"></p>
+          <p id="description"></p>
+        </div>
+        <div class="card">
+          <p id="time"></p>
+          <img src="" alt="" />
+          <p id="temp"></p>
+          <p id="description"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

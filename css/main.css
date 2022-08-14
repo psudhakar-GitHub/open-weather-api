@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --clr-primary: #eb6e4b;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 3rem auto;
+  font-size: 1.2rem;
+  min-width: 480px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control input {
+  width: 60%;
+}
+
+button[type="submit"] {
+  background-color: var(--clr-primary);
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10rem;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table {
+  margin: 1rem 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr {
+  background-color: var(--clr-primary);
+}
+
+td,
+th {
+  border: 1px solid grey;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+.cards {
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  table {
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    font-size: .8rem;
+    height: 30vh;
+    width: 15vw;
+    border: 1px solid black;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 1rem;
+    border-color: var(--clr-primary);
+  }
+}
