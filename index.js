@@ -2,7 +2,7 @@ const btn = document.querySelector('button[type="submit"]');
 const city = document.querySelector("#city").value;
 const cards = document.querySelectorAll(".card");
 const tbody = document.querySelector("tbody");
-const endpoint = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ed2b24670f5ebc46b763a912d6f32aa2&cnt=40&units=metric`;
+const endpoint = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=<your token here>&cnt=40&units=metric`;
 
 btn.addEventListener("click", () => {
   (async function () {
